@@ -7,9 +7,15 @@
 //
 
 #import "BDAAppDelegate.h"
-
 #import "BDAViewController.h"
 
+// the class extension
+@interface BDAAppDelegate()
+
+@property (strong, nonatomic) BDAViewController *viewController;
+@end
+
+// the class implementation
 @implementation BDAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -17,6 +23,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[BDAViewController alloc] initWithNibName:@"BDAViewController" bundle:nil];
+  
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

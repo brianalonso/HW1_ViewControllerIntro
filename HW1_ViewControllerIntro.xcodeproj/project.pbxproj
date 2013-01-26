@@ -18,6 +18,10 @@
 		1654164716A9D44000B633C8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1654164616A9D44000B633C8 /* Default-568h@2x.png */; };
 		1654164A16A9D44000B633C8 /* BDAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1654164916A9D44000B633C8 /* BDAViewController.m */; };
 		1654164D16A9D44000B633C8 /* BDAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1654164B16A9D44000B633C8 /* BDAViewController.xib */; };
+		1693809116B255F000276B46 /* BDATransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1693808F16B255F000276B46 /* BDATransitionViewController.m */; };
+		1693809216B255F000276B46 /* BDATransitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1693809016B255F000276B46 /* BDATransitionViewController.xib */; };
+		16F305D616AE38FC008FF616 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F305D416AE38FC008FF616 /* blueButton.png */; };
+		16F305D716AE38FC008FF616 /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F305D516AE38FC008FF616 /* whiteButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,11 @@
 		1654164816A9D44000B633C8 /* BDAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDAViewController.h; sourceTree = "<group>"; };
 		1654164916A9D44000B633C8 /* BDAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDAViewController.m; sourceTree = "<group>"; };
 		1654164C16A9D44000B633C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BDAViewController.xib; sourceTree = "<group>"; };
+		1693808E16B255F000276B46 /* BDATransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDATransitionViewController.h; path = ../BDATransitionViewController.h; sourceTree = "<group>"; };
+		1693808F16B255F000276B46 /* BDATransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDATransitionViewController.m; path = ../BDATransitionViewController.m; sourceTree = "<group>"; };
+		1693809016B255F000276B46 /* BDATransitionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BDATransitionViewController.xib; path = ../BDATransitionViewController.xib; sourceTree = "<group>"; };
+		16F305D416AE38FC008FF616 /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
+		16F305D516AE38FC008FF616 /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +92,9 @@
 		1654163616A9D44000B633C8 /* HW1_ViewControllerIntro */ = {
 			isa = PBXGroup;
 			children = (
+				1693808E16B255F000276B46 /* BDATransitionViewController.h */,
+				1693808F16B255F000276B46 /* BDATransitionViewController.m */,
+				1693809016B255F000276B46 /* BDATransitionViewController.xib */,
 				1654163F16A9D44000B633C8 /* BDAAppDelegate.h */,
 				1654164016A9D44000B633C8 /* BDAAppDelegate.m */,
 				1654164816A9D44000B633C8 /* BDAViewController.h */,
@@ -96,6 +108,8 @@
 		1654163716A9D44000B633C8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				16F305D416AE38FC008FF616 /* blueButton.png */,
+				16F305D516AE38FC008FF616 /* whiteButton.png */,
 				1654163816A9D44000B633C8 /* HW1_ViewControllerIntro-Info.plist */,
 				1654163916A9D44000B633C8 /* InfoPlist.strings */,
 				1654163C16A9D44000B633C8 /* main.m */,
@@ -164,6 +178,9 @@
 				1654164516A9D44000B633C8 /* Default@2x.png in Resources */,
 				1654164716A9D44000B633C8 /* Default-568h@2x.png in Resources */,
 				1654164D16A9D44000B633C8 /* BDAViewController.xib in Resources */,
+				16F305D616AE38FC008FF616 /* blueButton.png in Resources */,
+				16F305D716AE38FC008FF616 /* whiteButton.png in Resources */,
+				1693809216B255F000276B46 /* BDATransitionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +194,7 @@
 				1654163D16A9D44000B633C8 /* main.m in Sources */,
 				1654164116A9D44000B633C8 /* BDAAppDelegate.m in Sources */,
 				1654164A16A9D44000B633C8 /* BDAViewController.m in Sources */,
+				1693809116B255F000276B46 /* BDATransitionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +311,7 @@
 				1654165216A9D44000B633C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

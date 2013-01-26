@@ -11,9 +11,5 @@
 @class BDAViewController;
 
 @interface BDAAppDelegate : UIResponder <UIApplicationDelegate>
-
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) BDAViewController *viewController;
-
 @end
