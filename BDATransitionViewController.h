@@ -10,9 +10,10 @@
 
 @interface BDATransitionViewController : UIViewController
 
+// Actions
 - (IBAction)buttonClicked:(UIButton *)sender;
 
-
+// Public properties
 @property (nonatomic, copy) void (^dismissBlock)(void);
 
 @property (assign, nonatomic) NSString *buttonText;

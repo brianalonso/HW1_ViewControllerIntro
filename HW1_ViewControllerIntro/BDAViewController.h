@@ -12,11 +12,7 @@
 
 @interface BDAViewController : UIViewController <UIAlertViewDelegate,UIActionSheetDelegate>
 {
-    
     UIAlertView *alert;
 }
 
-@property (strong, nonatomic) BDATransitionViewController *transitionController;
-
-- (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion;
 @end

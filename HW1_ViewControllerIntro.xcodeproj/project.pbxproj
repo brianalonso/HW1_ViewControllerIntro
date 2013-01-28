@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1615A30816B399070063CD7F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1615A30716B399070063CD7F /* Icon@2x.png */; };
+		1615A30A16B3990C0063CD7F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1615A30916B3990C0063CD7F /* Icon.png */; };
 		1654163116A9D44000B633C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1654163016A9D44000B633C8 /* UIKit.framework */; };
 		1654163316A9D44000B633C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1654163216A9D44000B633C8 /* Foundation.framework */; };
 		1654163516A9D44000B633C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1654163416A9D44000B633C8 /* CoreGraphics.framework */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1615A30716B399070063CD7F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		1615A30916B3990C0063CD7F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		1654162C16A9D44000B633C8 /* HW1_ViewControllerIntro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW1_ViewControllerIntro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1654163016A9D44000B633C8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1654163216A9D44000B633C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,6 +112,8 @@
 		1654163716A9D44000B633C8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1615A30716B399070063CD7F /* Icon@2x.png */,
+				1615A30916B3990C0063CD7F /* Icon.png */,
 				16F305D416AE38FC008FF616 /* blueButton.png */,
 				16F305D516AE38FC008FF616 /* whiteButton.png */,
 				1654163816A9D44000B633C8 /* HW1_ViewControllerIntro-Info.plist */,
@@ -181,6 +187,8 @@
 				16F305D616AE38FC008FF616 /* blueButton.png in Resources */,
 				16F305D716AE38FC008FF616 /* whiteButton.png in Resources */,
 				1693809216B255F000276B46 /* BDATransitionViewController.xib in Resources */,
+				1615A30816B399070063CD7F /* Icon@2x.png in Resources */,
+				1615A30A16B3990C0063CD7F /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

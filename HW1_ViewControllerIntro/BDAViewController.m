@@ -11,7 +11,7 @@
 
 @interface BDAViewController ()
 
-// Outlets
+// Private Outlets/Properties
 @property (weak, nonatomic) IBOutlet UILabel *lblCoverVertical;
 @property (weak, nonatomic) IBOutlet UILabel *lblFlipHorizontal;
 @property (weak, nonatomic) IBOutlet UILabel *lblCrossDisolve;
@@ -23,12 +23,10 @@
 @property (assign, nonatomic) NSInteger flipHorizontal;
 @property (assign, nonatomic) NSInteger crossDissolve;
 @property (assign, nonatomic) NSInteger partialCurl;
+@property (strong, nonatomic) BDATransitionViewController *transitionController;
 
-
-
-// Actions
+// Private Actions
 - (IBAction)buttonPressed:(UIButton *)sender;
-
 
 @end
 
@@ -60,6 +58,7 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
 }
 
 // Supported Autorotations
@@ -107,7 +106,7 @@
                 self.lblCoverVertical.text = [NSString stringWithFormat:@"Cover Vertical:  %i", [self coverVertical]];
                 DLog(@"Cover Vertical button pressed: %i", [self coverVertical]);
                 [self.transitionController setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-                self.transitionController.buttonText = @"Dismiss Cross Vertical";
+                self.transitionController.buttonText = @"Dismiss Cover Vertical";
                 break;
                 
             case 2: // Flip Horizontal

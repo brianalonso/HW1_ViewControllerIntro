@@ -9,7 +9,10 @@
 #import "BDATransitionViewController.h"
 
 @interface BDATransitionViewController ()
+
+// Private properties/Outlets
 @property (weak, nonatomic) IBOutlet UIButton *buttonDismissText;
+
 @end
 
 @implementation BDATransitionViewController
@@ -26,6 +29,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
     // Set the button text from the public property
     [[self buttonDismissText] setTitle:self.buttonText forState:UIControlStateNormal];
 }
@@ -34,6 +42,8 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    // Dismiss this viewcontroller
+    [[self presentingViewController] dismissViewControllerAnimated:YES completion:[self dismissBlock]];
     
 }
 
