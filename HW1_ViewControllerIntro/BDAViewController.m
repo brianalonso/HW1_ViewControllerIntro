@@ -35,6 +35,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Experiment with custom buttons
 	UIImage *buttonImageNormal = [UIImage imageNamed:@"whiteButton.png"];
     UIEdgeInsets insets = UIEdgeInsetsMake(0, 12, 0, 12);
     UIImage *stretchableButtonImageNormal = [buttonImageNormal
@@ -57,8 +59,8 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-    
+    // Dispose of the transition view controller we have stuffed in a property
+    self.transitionController= nil;
 }
 
 // Supported Autorotations
@@ -89,7 +91,7 @@
     {
         // Instantiate view if nil (Lazy load)
         if (self.transitionController == nil) {
-            self.transitionController = [[BDATransitionViewController alloc]                            initWithNibName:@"BDATransitionViewController"                                                                                               bundle:nil];
+            self.transitionController = [[BDATransitionViewController alloc]                            initWithNibName:@"BDATransitionViewController"                                                                                                 bundle:nil];
             
             [self.transitionController setDismissBlock:^{
                 NSLog(@"Dismiss complete");
@@ -136,7 +138,6 @@
                 
             default:
                 break;
-                
         }
         
         // Display the view if any button other than Destroy is pressed
@@ -152,19 +153,7 @@
         else {
             // Present the view
             [self presentViewController:self.transitionController animated:YES completion:^{}];
-        }
-        
-
-        /*
-        [UIView beginAnimations:@"View Transition" context:nil];      
-        [UIView setAnimationDuration:1.25];                     
-        [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-        [UIView setAnimationTransition: UIViewAnimationTransitionCurlUp
-                                       forView:self.view cache:YES];
-        
-        [self.view addSubview:self.transitionController.view];
-        [UIView commitAnimations];
-         */
+        }        
     }
     else
         // Cancel

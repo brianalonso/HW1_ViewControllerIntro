@@ -42,12 +42,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    // Dismiss this viewcontroller
-    [[self presentingViewController] dismissViewControllerAnimated:YES completion:[self dismissBlock]];
-    
 }
 
 - (IBAction)buttonClicked:(UIButton *)sender {
+    // Dismiss the view controller and pass a Block to execute
     [[self presentingViewController] dismissViewControllerAnimated:YES completion:[self dismissBlock]];
 }
 @end

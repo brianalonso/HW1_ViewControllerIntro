@@ -13,8 +13,8 @@
 // Actions
 - (IBAction)buttonClicked:(UIButton *)sender;
 
-// Public properties
+// Public properties set by presenting controller
 @property (nonatomic, copy) void (^dismissBlock)(void);
 
-@property (assign, nonatomic) NSString *buttonText;
+@property (copy, nonatomic) NSString *buttonText;
 @end
